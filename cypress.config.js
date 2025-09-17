@@ -7,4 +7,15 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
-});
+
+  laptop: {
+    viewportWidth: 1920,
+    viewportHeight: 1080,
+  },
+
+  mobile: {
+    viewportWidth: 1080,
+    viewportHeight: 2400,
+  }
+
+  });

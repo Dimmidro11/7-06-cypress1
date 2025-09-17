@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "mobile": "cypress run --config viewportWidth=1080,viewportHeight=2400",
+    "laptop": "cypress run --config viewportWidth=1920,viewportHeight=1080"
   },
   "keywords": [],
   "author": "Dmitry Sergin",
