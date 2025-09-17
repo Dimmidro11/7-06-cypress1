@@ -4,8 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "mobile": "cypress run --config viewportWidth=1080,viewportHeight=2400",
-    "laptop": "cypress run --config viewportWidth=1920,viewportHeight=1080"
+    "mobile_electron_headless": "cypress run --config viewportWidth=1080,viewportHeight=2400", 
+    "mobile_electron_headed":"cypress run --config viewportWidth=1080,viewportHeight=2400 --headed",
+    "laptop_electron_headless": "cypress run --config viewportWidth=1920,viewportHeight=1080",
+    "laptop_electron_headed": "cypress run --config viewportWidth=1920,viewportHeight=1080 --headed",
+    "mobile_chrome_headed": "cypress run --browser chrome --config viewportWidth=1080,viewportHeight=2400 --headed",
+    "mobile_firefox_headed": "cypress run --browser firefox --config viewportWidth=1080,viewportHeight=2400 --headed",
+    "mobile_chrome_headless": "cypress run --browser chrome --config viewportWidth=1080,viewportHeight=2400",
+    "mobile_firefox_headless": "cypress run --browser firefox --config viewportWidth=1080,viewportHeight=2400",
+    "laptop_chrome_headed": "cypress run --browser chrome --config viewportWidth=1920,viewportHeight=1080 --headed",
+    "laptop_firefox_headed": "cypress run --browser firefox --config viewportWidth=1920,viewportHeight=1080 --headed",
+    "laptop_chrome_headless": "cypress run --browser chrome --config viewportWidth=1920,viewportHeight=1080",
+    "laptop_firefox_headless": "cypress run --browser firefox --config viewportWidth=1920,viewportHeight=1080"
   },
   "keywords": [],
   "author": "Dmitry Sergin",
